@@ -1,9 +1,14 @@
 import React from 'react';
 import { useForm, SubmitHandler } from "react-hook-form";
-
+import {db} from "./firebase";
+import {doc, setDoc} from "firebase/firestore";
 function Form(){
     const { register, handleSubmit,watch, formState: { errors }, } = useForm();
-    const onSubmit=(data) => console.log(data);
+    const onSubmit=async (data) => {
+        console.log(data);
+
+        const docRef = await setDoc(doc(db, "members", new Date().toString()), data);
+    }
     return(
         <div  className="form-group">
             <form onSubmit={handleSubmit(onSubmit)} className="form">
