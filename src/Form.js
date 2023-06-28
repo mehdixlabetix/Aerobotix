@@ -6,6 +6,7 @@ function Form(){
     const { register, handleSubmit,watch, formState: { errors }, } = useForm();
     const onSubmit=async (data) => {
         console.log(data);
+        data.time=new Date().toString();
 
         const docRef = await setDoc(doc(db, "members", new Date().toString()), data);
     }
