@@ -15,11 +15,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 45%;
+    width: 60%;
     height: 50vh;
     padding-top: 70px;
     justify-content: space-around;
-    margin-left: 26%;
+    margin-left: 20%;
 
 }
 .formLabels
@@ -27,9 +27,9 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 50px;
-    padding-left: 56%;
-    width: 110%;
+    height: 56px;
+    padding-left: 50%;
+    width: 120%;
 
 }
 .sub
@@ -48,6 +48,7 @@
 {
     display: flex;
     flex-direction: row;
+    column-gap:10%;
     align-items: baseline;
     padding-right: 40%;
     width: 100%;
@@ -65,7 +66,7 @@
     background-image:url("../public/images/3d-space-sky-background (1).jpg")  ;
     background-size: cover;
     background-position: center;
-    width: 60%;
+    width: 53%;
     height: 80vh;
     border-radius: 20px;
 }
@@ -74,21 +75,21 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background:rgb(70,10,10,0.9);
+    background:rgb(210,10,10,0.75);
     justify-content: space-evenly;
 
     background-size: cover;
     background-position: center;
     margin-top: auto;
-    width: 112%;
+    width: 132%;
     height: 80vh;
 
 }
 .input
-{   background: darkgrey;
+{   background: antiquewhite;
     border-radius: 6px ;
-    width: 50%;
-    height: 35%;
+    width: 55%;
+    height: 32%;
 
 }
 .label{
@@ -96,9 +97,8 @@
     display: flex;
     align-items: baseline;
     padding-right: 10px;
-    font-family:"Eras Bold ITC";
-    font-size: 18px;
     color:black;
+    font: bold 17px/1.5 Helvetica, Verdana, sans-serif;
 
 }
 .App-logo {
