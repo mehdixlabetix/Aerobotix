@@ -27,6 +27,30 @@ function Form(){
                     {errors.exampleRequired && <span style={{color:"white"}}>This field is required</span>}
                     {errors.email && <span style={{color:"white"}}>{errors.email.message}</span>}</div>
                 <div className="formLabels">
+                    <label className="label">Numéro de Téléphone :</label>
+                    <input className="input" {...register("phone", {
+                        required: true,
+                        pattern: {
+                            value: /^[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{5}$/,
+                            message: "invalid phone number"
+                        }
+                    })} />
+                    {errors.exampleRequired && <span style={{color:"white"}}>This field is required</span>}
+                    {errors.phone && <span style={{color:"white"}}>{errors.phone.message}</span>}</div>
+                <div className="formLabels">
+                    <label className="label">Lien Facebook :</label>
+                    <input className="input"  {...register("fb",{
+                        required: true,
+                        pattern: {
+                            value: /^(https?:\/\/)?(www\.)?facebook.com\/[a-zA-Z0-9(\.\?)?]/,
+                        }})} /></div>
+                <div className="formLabels">
+                    <label className="label">Vos intérets :</label>
+                    <input className="input"  {...register("interests")} /></div>
+                <div className="formLabels">
+                    <label className="label">Vos attentes :</label>
+                    <input className="input"  {...register("expectations")} /></div>
+                <div className="formLabels">
                     <label className="label"> Filiere :</label>
                     <select className="input" {...register("filiere")}>
                         <option value="GL">GL</option>
