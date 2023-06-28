@@ -13,4 +13,4 @@ apiKey: "AIzaSyDLJ6ePA94GuhdyKNuCpf-x-QuDWvWVnFo",
     measurementId: "G-4NLC0Q5LC5"};
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-export const db= getFirestore(app);;
+export const db= getFirestore(app);
