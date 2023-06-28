@@ -75,7 +75,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background:rgb(210,10,10,0.75);
+    background:rgba(161,4,4,0.8);
     justify-content: space-evenly;
 
     background-size: cover;
