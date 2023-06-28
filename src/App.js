@@ -10,6 +10,7 @@ function App() {
         </div>
         <div className="container">
             <Form />
+            <div className="side"></div>
         </div>
     </div>
   );
