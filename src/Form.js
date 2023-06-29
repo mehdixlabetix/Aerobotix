@@ -2,17 +2,26 @@ import React from 'react';
 import { useForm, SubmitHandler } from "react-hook-form";
 import {db} from "./firebase";
 import {doc, setDoc} from "firebase/firestore";
+import {Link, Route, Routes, useNavigate} from "react-router-dom";
+import {motion} from "framer-motion";
+
 function Form(){
+    const navigate = useNavigate();
     const { register, handleSubmit,watch, formState: { errors }, } = useForm();
     const onSubmit=async (data) => {
         console.log(data);
+        navigate("/Submitted");
         data.time=new Date().toString();
 
         const docRef = await setDoc(doc(db, "members", new Date().toString()), data);
     }
     const clickHandler = (button)=>{button.target.classList.toggle("move")}
     return(
-        <div  className="form-group">
+        <motion.div
+            initial={{opacity:0 }}
+            animate={{opacity:1, transition:{duration:0.5} }}
+            exit={{opacity:0,transition:{duration:0.01}}}
+            className="form-group">
             <form onSubmit={handleSubmit(onSubmit)} className="form">
                 <div className="formLabels">
                     <label className="label">Prénom :</label>
@@ -79,8 +88,11 @@ function Form(){
                                 <option value="CH">CH</option>
                                 <option value="BIO">BIO</option>
                             </select></div></div></div>
-                <input onMouseOver={clickHandler} className="sub stop" type="submit" value="Submit"/>
+                <Link to="/Submitted" >
+                <input  className="sub stop" type="submit" value="Submit"/></Link>
+
+
             </form>
-        </div>);
+        </motion.div>);
 }
 export default Form;
