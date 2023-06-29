@@ -2,7 +2,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  background-image: url("../public/images/image.jpg");
+  background-image: url("../public/images/hao-wang-pVq6YhmDPtk-unsplash.jpg");
     height:100vh;
     width: 100%;
     background-position:center;
@@ -33,14 +33,19 @@
 
 }
 .sub
-{       background:rgb(192,192,192,0.9);
-    border-radius: 10px;
+{       background:#0b0203;
+    color: white;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 7px 20px;
+    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
 }
 .filliere {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     padding-right: 100px;
+    padding-top: 20px;
 
 
 }
@@ -75,11 +80,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background:rgba(161,4,4,0.8);
     justify-content: space-evenly;
-
     background-size: cover;
-    background-position: center;
+    background: rgba(161, 4, 4, 0.8) center;
     margin-top: auto;
     width: 132%;
     height: 80vh;
@@ -87,11 +90,17 @@
 }
 .input
 {   background: antiquewhite;
-    border-radius: 6px ;
+    border-radius: 3px ;
     width: 55%;
-    height: 32%;
+    height: 37%;
+    border: none;
+    padding: 3px;
+    appearance: none;
+    outline: none;
+
 
 }
+
 .label{
 
     display: flex;
