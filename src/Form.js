@@ -15,14 +15,19 @@ function Form(){
 
         const docRef = await setDoc(doc(db, "members", new Date().toString()), data);
     }
-    const clickHandler = (button)=>{button.target.classList.toggle("move")}
+
+    const clickHandler = (button)=> {
+
+        button.target.classList.toggle("move")
+    }
+
     return(
         <motion.div
             initial={{opacity:0 }}
             animate={{opacity:1, transition:{duration:0.5} }}
             exit={{opacity:0,transition:{duration:0.01}}}
             className="form-group">
-            <form onSubmit={handleSubmit(onSubmit)} className="form">
+            <form onSubmit={handleSubmit(onSubmit)} className="form" id="f">
                 <div className="formLabels">
                     <label className="label">Prénom :</label>
                     <input placeholder="Prénom" className="input"  {...register("prenom")} /></div>
@@ -89,7 +94,7 @@ function Form(){
                                 <option value="BIO">BIO</option>
                             </select></div></div></div>
 
-                <input  className="sub stop" type="submit" value="Submit"/>
+                <input className="sub stop" type="submit" value="Submit"/>
 
             </form>
         </motion.div>);

@@ -19,6 +19,9 @@ code {
 {
   transform: translateX(200%);
 }
+input::placeholder
+{
+ opacity: 0.6;}
 .return{
   position: absolute;
   top: 80%;

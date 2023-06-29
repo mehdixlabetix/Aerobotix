@@ -2,11 +2,11 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  background-image: url("../public/images/hao-wang-pVq6YhmDPtk-unsplash.jpg");
+  background-image: url("../public/images/image (4).jpg");
     height:100vh;
     width: 100%;
     background-position:center;
-    background-size: cover;
+    background-size: cover ;
     background-repeat: no-repeat;
 }
 
@@ -15,11 +15,11 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 60%;
-    height: 50vh;
-    padding-top: 200px;
+    width: 65%;
+    height: 65vh;
+    padding-top: 130px;
     justify-content: space-around;
-    margin-left: 20%;
+    margin-left: 18%;
 
 }
 .formLabels
@@ -45,7 +45,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     padding-right: 100px;
-    padding-top: 20px;
+    padding-top: 30px;
 
 
 }
@@ -63,16 +63,16 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 80%;
-    height: 60px;
-    column-gap: 10%;
+    width: 70%;
+    height: 70px;
+    column-gap: 20%;
 }
 .side{
-    background-image:url("../public/images/ps1.png")  ;
+    background-image:url("../public/images/psss.jpg")  ;
     background-size: cover;
     background-position: center;
     width: 53%;
-    height: 80vh;
+    height: 85vh;
     border-radius: 20px;
 }
 .form{
@@ -82,19 +82,20 @@
     align-items: center;
     justify-content: space-evenly;
     background-size: cover;
-    background: rgba(161, 4, 4, 0.8) center;
+
+    background: rgb(226,229,238,0.8) center;
     margin-top: auto;
-    width: 132%;
-    height: 80vh;
+    width: 137%;
+    height: 85vh;
 
 }
 .input
-{   background: antiquewhite;
+{   background: aliceblue;
     border-radius: 3px ;
     width: 55%;
     height: 37%;
     border: none;
-    padding: 3px;
+    padding: 5px;
     appearance: none;
     outline: none;
 
