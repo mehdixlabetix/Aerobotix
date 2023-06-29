@@ -29,6 +29,7 @@
     justify-content: space-evenly;
     height: 56px;
     padding-left: 50%;
+    margin-top: 1px;
     width: 120%;
 
 }
@@ -45,7 +46,8 @@
     flex-direction: column;
     justify-content: space-evenly;
     padding-right: 100px;
-    padding-top: 30px;
+    padding-top: 10px;
+
 
 
 }
@@ -82,7 +84,7 @@
     align-items: center;
     justify-content: space-evenly;
     background-size: cover;
-
+    row-gap: 12px;
     background: rgb(226,229,238,0.8) center;
     margin-top: auto;
     width: 137%;
