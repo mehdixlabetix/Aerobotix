@@ -88,9 +88,8 @@ function Form(){
                                 <option value="CH">CH</option>
                                 <option value="BIO">BIO</option>
                             </select></div></div></div>
-                <Link to="/Submitted" >
-                <input  className="sub stop" type="submit" value="Submit"/></Link>
 
+                <input  className="sub stop" type="submit" value="Submit"/>
 
             </form>
         </motion.div>);
