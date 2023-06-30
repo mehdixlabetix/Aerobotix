@@ -30,7 +30,7 @@ function Form(){
             <form onSubmit={handleSubmit(onSubmit)} className="form" id="f">
                 <div className="formLabels">
                     <label className="firstLabel">Prénom :</label>
-                    <input placeholder="Prénom" className="input"  {...register("prenom")} /></div>
+                    <input placeholder="Prénom" className="firstInput"  {...register("prenom")} /></div>
                 <div className="formLabels">
                     <label  className="label">Nom :</label>
                     <input placeholder="Nom" className="input" {...register("nom", {required: true})} />
