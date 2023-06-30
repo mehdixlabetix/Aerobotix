@@ -65,8 +65,8 @@ function Form(){
                             value: /^(https?:\/\/)?(www\.)?facebook.com\/[a-zA-Z0-9(\.\?)?]/,
                         }})} /></div>
                 <div className="formLabels">
-                    <label className="label">Vos intérets :</label>
-                    <input placeholder="interets" className="input"  {...register("interests")} /></div>
+                    <label className="label">Vos intérêts :</label>
+                    <input placeholder="intérêts" className="input"  {...register("interests")} /></div>
                 <div className="formLabels">
                     <label className="label">Vos attentes :</label>
                     <input  placeholder="attentes" className="input"  {...register("expectations")} /></div>
@@ -75,7 +75,7 @@ function Form(){
 
                         <div className="fillabel">
                             <label className="label">Votre Niveau :</label>
-                            <label  className="label"> Filiere :</label></div>
+                            <label  className="label"> Filière :</label></div>
                         <div className="fil"><select defaultValue="1" className="input" {...register("niveau")}>
                             <option value="1">1</option>
                             <option value="2">2</option>
