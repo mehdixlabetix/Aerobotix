@@ -2,7 +2,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  background-image: url("../public/images/image (7).jpg");
+  background-image: url("../public/images/image (8).jpg");
     height:100vh;
     width: 100%;
     background-position:center;
@@ -27,9 +27,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 56px;
+    height: 55px;
     padding-left: 50%;
-    margin-top: 1px;
     width: 120%;
 
 }
@@ -40,6 +39,8 @@
     border-radius: 5px;
     padding: 7px 20px;
     box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
+    margin-bottom: 10px;
+
 }
 .filliere {
     display: flex;
@@ -84,7 +85,7 @@
     align-items: center;
     justify-content: space-evenly;
     background-size: cover;
-    row-gap: 12px;
+    row-gap: 13px;
     background: rgb(226,229,238,0.8) center;
     margin-top: auto;
     width: 137%;
@@ -111,6 +112,18 @@
     padding-right: 10px;
     color:black;
     font: bold 17px/1.5 Helvetica, Verdana, sans-serif;
+
+
+}
+.firstLabel{
+
+    display: flex;
+    align-items: baseline;
+    padding-right: 10px;
+    color:black;
+    font: bold 17px/1.5 Helvetica, Verdana, sans-serif;
+    padding-top: 22px;
+
 
 }
 .App-logo {
