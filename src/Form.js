@@ -25,7 +25,7 @@ function Form(){
         <motion.div drag={true}
 
             initial={{opacity:0 }}
-            animate={{opacity:1, transition:{duration:0.5} }}
+            animate={{opacity:1, transition:{duration:0.5, type: 'spring'} }}
             exit={{opacity:0,transition:{duration:0.01}}}
             className="form-group">
             <form onSubmit={handleSubmit(onSubmit)} className="form" id="f">
@@ -94,11 +94,13 @@ function Form(){
                                 <option value="CH">CH</option>
                                 <option value="BIO">BIO</option>
                             </motion.select></div></div></div>
-
-                <motion.input
-                    whileHover={{scale:1.1}}
-                    whileTap={{scale:0.9}}
-                    className="sub" type="submit" value="Submit"/>
+                <Link to="/Submitted">
+                    <motion.input
+                        whileHover={{scale: 1.1}}
+                        whileTap={{scale: 0.9}}
+                        transition={{type: "spring", stiffness: 400, damping: 17}}
+                        className="sub" type="submit" value="Submit"/>
+                </Link>
 
             </form>
         </motion.div>);

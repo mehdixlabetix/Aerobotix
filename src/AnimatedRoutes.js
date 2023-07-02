@@ -11,10 +11,15 @@ function AnimatedRoutes(){
             <Route path="/Submitted" element={
                 <motion.div
                     initial={{width:0,opacity:0}}
-                    animate={{width:"60%",opacity:1,transition:{duration:0.4} }}
-                    exit={{opacity:0.5,translateX:"150%",transition:{duration:0.5}}}
+                    animate={{width:"60%",opacity:1,transition:{duration:0.8 ,type: 'spring'} }}
+                    exit={{opacity:0.5,translateX:"150%",transition:{duration:0.55, type: 'spring'}}}
                     className="side"
-                ><Link to="/" className="return">Try Again </Link></motion.div>} />
+                ><Link to="/" >
+                    <motion.div  whileHover={{scale: 1.2}}
+                                 whileTap={{scale: 0.9}}
+                                 transition={{type: "spring", stiffness: 400, damping: 17}}
+                                 className="return">
+                        Try Again</motion.div> </Link></motion.div>} />
         </Routes>
     </AnimatePresence>);
 }
