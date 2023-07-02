@@ -2,7 +2,7 @@ import React from 'react';
 import { useForm, SubmitHandler } from "react-hook-form";
 import {db} from "./firebase";
 import {doc, setDoc} from "firebase/firestore";
-import {Link, Route, Routes, useNavigate} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import {motion} from "framer-motion";
 
 function Form(){
@@ -94,13 +94,13 @@ function Form(){
                                 <option value="CH">CH</option>
                                 <option value="BIO">BIO</option>
                             </motion.select></div></div></div>
-                <Link to="/Submitted">
+
                     <motion.input
                         whileHover={{scale: 1.1}}
                         whileTap={{scale: 0.9}}
                         transition={{type: "spring", stiffness: 400, damping: 17}}
                         className="sub" type="submit" value="Submit"/>
-                </Link>
+
 
             </form>
         </motion.div>);
