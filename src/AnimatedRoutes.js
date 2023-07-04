@@ -7,13 +7,13 @@ function AnimatedRoutes(){
     return(
     <AnimatePresence>
         <Routes location={location} key={location.pathname}>
-            <Route path="/" element={<><Form /><div className="side"></div></>} />
+            <Route path="/" element={<div className="route"><Form /><div className="side"></div></div>} />
             <Route path="/Submitted" element={
                 <motion.div
                     initial={{width:0,opacity:0}}
                     animate={{width:"60%",opacity:1,transition:{duration:0.8 ,type: 'spring'} }}
                     exit={{opacity:0.5,translateX:"150%",transition:{duration:0.55, type: 'spring'}}}
-                    className="side"
+                    className="sideSub"
                 ><Link to="/" >
                     <motion.div  whileHover={{scale: 1.2}}
                                  whileTap={{scale: 0.9}}

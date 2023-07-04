@@ -16,11 +16,11 @@
     flex-direction: row;
     flex-wrap:inherit;
     align-items: center;
-    width: 65%;
+    width: 70%;
     height: 65vh;
-    padding-top: 130px;
+    padding-top: 62px;
     justify-content: space-around;
-    margin-left: 18%;
+    margin-left: 16%;
 
 }
 .formLabels
@@ -28,8 +28,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    height: 55px;
-    padding-left: 50%;
+    height: 58px;
+    padding-left: 40%;
     width: 120%;
 
 }
@@ -41,6 +41,7 @@
     padding: 7px 20px;
     box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.2);
     margin-bottom: 10px;
+    margin-left: -75px;
 
 }
 .filliere {
@@ -48,7 +49,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     padding-right: 100px;
-    margin-top: 30px;
+    margin-top: 40px;
 
 
 
@@ -67,18 +68,35 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 70%;
-    height: 70px;
-    column-gap: 20%;
+    width: 53%;
+    height: 80px;
+    column-gap: 50%;
 }
-.side{
+.sideSub{
     background-image:url("../public/images/psss.jpg")  ;
     background-size: cover;
     background-position: center;
     width: 53%;
     height: 85vh;
     border-radius: 20px;
+    margin-top: 10%;
 }
+.side{
+    background-image:url("../public/images/psss.jpg")  ;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 85vh;
+    border-radius: 20px;
+
+}
+.route{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+   }
 .form{
     border-radius: 20px;
     display: flex;
@@ -89,14 +107,14 @@
     row-gap: 12px;
     background: rgb(226,229,238,0.8) center;
     margin-top: auto;
-    width: 137%;
+    width: 150%;
     height: 85vh;
 
 }
 .input
 {   background: aliceblue;
     border-radius: 3px ;
-    width: 55%;
+    width: 52%;
     height: 37%;
     border: none;
     padding: 5px;
@@ -108,7 +126,7 @@
 .firstInput
 {   background: aliceblue;
     border-radius: 3px ;
-    width: 55%;
+    width: 52%;
     height: 57%;
     border: none;
     padding: 7px 5px;
@@ -176,4 +194,71 @@
 .aero{
     height: 100%;
     width: 30%;
+}
+@media (max-width: 900px){
+    .form{
+        width: 105%;
+        height: 65vh;
+
+    }
+    .route
+    {   display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        width: 135%;
+        height: 100%;
+
+    }
+    .sub{
+        margin-left: 0px;
+        font-size: 10px;
+    }
+    .fil{
+        font-size: 10px;
+
+        width: 100%;
+        column-gap: 50%;
+    }
+    .sideSub{
+        width: 100vh;
+        height: 50vh;
+        background-position: center;
+        background-size: 180px 500px;
+    }
+    .return{
+        margin-top: -30%;
+        margin-right: -11%;
+    }
+
+    .side{
+        width: 100vh;
+        height: 65vh;
+        background-position: center;
+        background-size: 200px 500px;
+    }
+    .input{
+        width: 60%;
+        height: 20%;
+    }
+    .firstInput{
+        margin-top: 5px;
+        width: 60%;
+        height: 15%;
+    }
+    .label{
+        font-size: 0.5rem;
+    }
+    .firstLabel{
+        font-size: 0.5rem;
+    }
+    .return{
+        top: 80%;
+        right: 46%;
+        padding: 10px 20px;
+        border-radius: 5px;
+        text-decoration: none;
+        background: black center;
+        background-size: 10px 10px;
+        color: white;
+    }
 }

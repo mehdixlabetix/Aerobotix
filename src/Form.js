@@ -22,7 +22,7 @@ function Form(){
     }
 
     return(
-        <motion.div drag={true}
+        <motion.div
 
             initial={{opacity:0 }}
             animate={{opacity:1, transition:{duration:0.5, type: 'spring'} }}
@@ -100,7 +100,6 @@ function Form(){
                         whileTap={{scale: 0.9}}
                         transition={{type: "spring", stiffness: 400, damping: 17}}
                         className="sub" type="submit" value="Submit"/>
-
 
             </form>
         </motion.div>);
