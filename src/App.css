@@ -261,4 +261,7 @@
         background-size: 10px 10px;
         color: white;
     }
+    .container{
+        margin-top: 65px;
+    }
 }
