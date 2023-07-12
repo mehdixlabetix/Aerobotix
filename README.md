@@ -1,4 +1,4 @@
-# Aerobotix Club Form
+ ## Aerobotix Club Form
 
 This is a web form built using React and connected to Firebase, designed for the Aerobotix Robotics Club. The form allows users to submit their information for membership or any other relevant purposes.
 
@@ -26,7 +26,8 @@ To get the form up and running on your local machine, follow these steps:
 1. Clone the repository:
 
 ```
-https://github.com/mehdixlabetix/Aerobotix```
+https://github.com/mehdixlabetix/Aerobotix
+```
 
 2. Navigate to the project directory:
 
