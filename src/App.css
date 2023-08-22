@@ -195,6 +195,13 @@
     height: 100%;
     width: 30%;
 }
+span {
+    display: block;
+    text-align: left;
+    color: #004791;
+    font-size: 1rem;
+
+}
 @media (max-width: 900px){
     .form{
         width: 105%;

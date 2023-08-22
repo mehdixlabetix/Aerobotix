@@ -3,8 +3,9 @@ import { getFirestore } from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 // Your web app's Firebase configuration
+const key="AIzaSyDLJ6ePA94GuhdyKNuCpf-x-QuDWvWVnFo";
 const firebaseConfig = {
-apiKey: "AIzaSyDLJ6ePA94GuhdyKNuCpf-x-QuDWvWVnFo",
+apiKey: key,
     authDomain: "aerobotix-53859.firebaseapp.com",
     projectId: "aerobotix-53859",
     storageBucket: "aerobotix-53859.appspot.com",

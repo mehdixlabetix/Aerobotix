@@ -9,7 +9,6 @@ function Form(){
     const navigate = useNavigate();
     const { register, handleSubmit,watch, formState: { errors }, } = useForm();
     const onSubmit=async (data) => {
-        console.log(data);
         navigate("/Submitted");
         data.time=new Date().toString();
 
@@ -34,38 +33,42 @@ function Form(){
                     <motion.input whileFocus={{scale:1.2}}  placeholder="Prénom" className="firstInput"  {...register("prenom")} /></div>
                 <div className="formLabels">
                     <label  className="label">Nom :</label>
-                    <motion.input whileFocus={{scale:1.2}}  placeholder="Nom" className="input" {...register("nom", {required: true})} />
-                    {errors.exampleRequired && <span style={{color:"white"}}>This field is required</span>}</div>
+                    <motion.input whileFocus={{scale:1.2}}  placeholder="Nom" className="input" {...register("nom", {
+                        required: "Veuillez entrer votre nom",
+                    })} />
+                    {errors.nom && <span > {errors.nom.message}</span>}</div>
                 <div className="formLabels">
                     <label className="label">Email :</label>
                     <motion.input whileFocus={{scale:1.2}}  placeholder="Email" className="input" {...register("email", {
-                        required: true,
+                        required: "Veuillez entrer votre email",
                         pattern: {
                             value: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/,
-                            message: "invalid email"
+                            message: "Email invalide"
                         }
                     })} />
-                    {errors.exampleRequired && <span style={{color:"white"}}>This field is required</span>}
-                    {errors.email && <span style={{color:"white"}}>{errors.email.message}</span>}</div>
+                    {errors.email && <span>{errors.email.message}</span>}</div>
                 <div className="formLabels">
                     <label  className="label">Numéro de Téléphone :</label>
                     <motion.input whileFocus={{scale:1.2}} placeholder="Numéro Téléphone" className="input" {...register("phone", {
-                        required: true,
+                        required: "Veuillez saisir votre numéro de téléphone",
                         pattern: {
                             value: /^[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{5}$/,
-                            message: "invalid phone number"
+                            message: "Numero de telephone invalide"
                         }
                     })} />
-                    {errors.exampleRequired && <span style={{color:"white"}}>This field is required</span>}
-                    {errors.phone && <span style={{color:"white"}}>{errors.phone.message}</span>}</div>
+
+                {errors.phone && <span >{errors.phone.message}</span>}</div>
                 <div className="formLabels">
                     <label  className="label">Lien Facebook :</label>
                     <motion.input whileFocus={{scale:1.2} } placeholder="Lien Facebook" className="input"  {...register("fb",{
-                        required: true,
+                        required: "Veuillez saisir votre lien facebook",
                         pattern: {
                             value: /^(https?:\/\/)?(www\.)?facebook.com\/[a-zA-Z0-9(\.\?)?]/,
-                        }})} /></div>
-                <div className="formLabels">
+                            message: "Lien facebook invalide"
+                        }})} />
+                {errors.fb && <span>{errors.fb.message}</span>}</div>
+
+            <div className="formLabels">
                     <label className="label">Vos intérêts :</label>
                     <motion.input whileFocus={{scale:1.2}}  placeholder="intérêts" className="input"  {...register("interests")} /></div>
                 <div className="formLabels">
