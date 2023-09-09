@@ -6,7 +6,7 @@ import { ChakraProvider } from "@chakra-ui/react";
 import CLOUDS from "vanta/src/vanta.clouds";
 import { useEffect } from "react";
 import theme from "./Components/Theme";
-import {v} from "./Components/Form";
+import { v } from "./Components/Form";
 function App() {
   useEffect(() => {
     CLOUDS({
