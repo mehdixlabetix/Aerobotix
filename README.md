@@ -1,4 +1,4 @@
- ## Aerobotix Club Form
+## Aerobotix Club Form
 
 This is a web form built using React and connected to Firebase, designed for the Aerobotix Robotics Club. The form allows users to submit their information for membership or any other relevant purposes.
 
@@ -58,4 +58,3 @@ To deploy the form to Vercel or any other hosting platform, follow their respect
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
-
