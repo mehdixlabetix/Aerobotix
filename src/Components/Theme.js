@@ -1,7 +1,10 @@
 import { extendTheme } from "@chakra-ui/react";
 
 const activeLabelStyles = {
-  transform: window.outerWidth>780?"scale(0.95) translateY(-34px)":"scale(0.95) translateY(-24px)",
+  transform:
+    window.outerWidth > 780
+      ? "scale(0.95) translateY(-34px)"
+      : "scale(0.95) translateY(-24px)",
 };
 const theme = extendTheme({
   components: {

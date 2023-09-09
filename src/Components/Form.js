@@ -14,7 +14,6 @@ import {
   VStack,
 } from "@chakra-ui/react";
 
-
 function Form() {
   const navigate = useNavigate();
   const {
@@ -34,10 +33,7 @@ function Form() {
   };
 
   return (
-    <motion.div
-
-      className="form-group"
-    >
+    <motion.div className="form-group">
       <form onSubmit={handleSubmit(onSubmit)} className="form">
         <VStack spacing={7} id="formm">
           <FormControl id="kol" variant="floating">
@@ -100,7 +96,7 @@ function Form() {
 
             {errors.phone && <span>{errors.phone.message}</span>}
           </FormControl>
-          <FormControl id="kol"  isInvalid={errors.fb} variant="floating">
+          <FormControl id="kol" isInvalid={errors.fb} variant="floating">
             <Input
               placeholder=""
               as={motion.input}
@@ -109,8 +105,7 @@ function Form() {
               {...register("fb", {
                 required: "Veuillez saisir votre lien facebook",
                 pattern: {
-                  value:
-                    /^(https?:\/\/)?(www\.)?facebook.com\/[a-zA-Z0-9(?)]/,
+                  value: /^(https?:\/\/)?(www\.)?facebook.com\/[a-zA-Z0-9(?)]/,
                   message: "Lien facebook invalide",
                 },
               })}
@@ -190,11 +185,9 @@ function Form() {
             value="Submit"
             colorScheme="red"
             width="200px"
-
           >
             Submit
           </Button>
-
         </VStack>
       </form>
     </motion.div>
