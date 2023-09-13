@@ -102,8 +102,9 @@ function Form() {
               as={motion.input}
               whileFocus={{ scale: 1.05 }}
               id="input"
+
               {...register("fb")}
-            />
+
             <FormLabel id="label">Lien Facebook :</FormLabel>
 
           </FormControl>
