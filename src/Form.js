@@ -60,13 +60,8 @@ function Form(){
                 {errors.phone && <span >{errors.phone.message}</span>}</div>
                 <div className="formLabels">
                     <label  className="label">Lien Facebook :</label>
-                    <motion.input whileFocus={{scale:1.2} } placeholder="Lien Facebook" className="input"  {...register("fb",{
-                        required: "Veuillez saisir votre lien facebook",
-                        pattern: {
-                            value: /^(https?:\/\/)?(www\.)?facebook.com\/[a-zA-Z0-9(\.\?)?]/,
-                            message: "Lien facebook invalide"
-                        }})} />
-                {errors.fb && <span>{errors.fb.message}</span>}</div>
+                    <motion.input whileFocus={{scale:1.2} } placeholder="Lien Facebook" className="input"  {...register("fb")} />
+                </div>
 
             <div className="formLabels">
                     <label className="label">Vos intérêts :</label>
