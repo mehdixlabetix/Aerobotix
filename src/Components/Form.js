@@ -105,7 +105,7 @@ function Form() {
               {...register("fb")}
             />
             <FormLabel id="label">Lien Facebook :</FormLabel>
-            {errors.fb && <span>{errors.fb.message}</span>}
+
           </FormControl>
 
           <FormControl id="kol" variant="floating">
