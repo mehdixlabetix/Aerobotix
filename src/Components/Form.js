@@ -96,7 +96,7 @@ function Form() {
 
             {errors.phone && <span>{errors.phone.message}</span>}
           </FormControl>
-          <FormControl id="kol" isInvalid={errors.fb} variant="floating">
+          <FormControl id="kol" variant="floating">
             <Input
               placeholder=""
               as={motion.input}
@@ -105,7 +105,7 @@ function Form() {
               {...register("fb")}
             />
             <FormLabel id="label">Lien Facebook :</FormLabel>
-            {errors.fb && <span>{errors.fb.message}</span>}
+
           </FormControl>
 
           <FormControl id="kol" variant="floating">
