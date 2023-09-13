@@ -96,7 +96,7 @@ function Form() {
 
             {errors.phone && <span>{errors.phone.message}</span>}
           </FormControl>
-          <FormControl id="kol" isInvalid={errors.fb} variant="floating">
+          <FormControl id="kol" variant="floating">
             <Input
               placeholder=""
               as={motion.input}
