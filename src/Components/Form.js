@@ -60,7 +60,7 @@ function Form() {
 
             {errors.nom && <span> {errors.nom.message}</span>}
           </FormControl>
-          <FormControl id="kol"  variant="floating">
+          <FormControl id="kol" variant="floating">
             <Input
               placeholder=""
               as={motion.input}
@@ -102,11 +102,10 @@ function Form() {
               as={motion.input}
               whileFocus={{ scale: 1.05 }}
               id="input"
-
               {...register("fb")}
+            />
 
             <FormLabel id="label">Lien Facebook :</FormLabel>
-
           </FormControl>
 
           <FormControl id="kol" variant="floating">
