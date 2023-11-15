@@ -1,19 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
-import Form from "./Form";
-import {Routes, Route, Link, Location, useLocation} from "react-router-dom";
-import AnimatedRoutes from "./AnimatedRoutes";
-
+import "./App.css";
+import Form from "./Components/Form";
+import { Routes, Route, Link, Location, useLocation } from "react-router-dom";
+import AnimatedRoutes from "./Components/AnimatedRoutes";
+import { ChakraProvider } from "@chakra-ui/react";
+import CLOUDS from "vanta/src/vanta.clouds";
+import { useEffect } from "react";
+import theme from "./Components/Theme";
+import { v } from "./Components/Form";
 function App() {
+  useEffect(() => {
+    CLOUDS({
+      el: "#app",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.0,
+      minWidth: 200.0,
+      skyColor: 0x2f7b98,
+      sunColor: 0xa71515,
+      sunlightColor: 0xa20000,
+      speed: 0.7,
+    });
+  }, []);
   return (
-    <div className="App">
-       {/* <div className="logo">
-            <img src={require("./images/logo.png") } className="aero" alt="logo" />
-        </div>*/}
+    <ChakraProvider theme={theme}>
+      <div id="app" className="vanta">
         <div className="container">
-            <AnimatedRoutes />
+          <AnimatedRoutes />
         </div>
-    </div>
+      </div>
+    </ChakraProvider>
   );
 }
 
